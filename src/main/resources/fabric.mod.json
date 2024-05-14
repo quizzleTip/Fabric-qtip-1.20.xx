@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "qtipmod",
+	"version": "${version}",
+	"name": "qtipMod",
+	"description": "animals and peanuts",
+	"authors": [
+		"QuizzleTip"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/qtipmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.qtip.qtipmod.QtipMod"
+		],
+		"client": [
+			"net.qtip.qtipmod.QtipModClient"
+		],
+
+		"fabric-datagen": [
+			"net.qtip.qtipmod.QtipModDataGenerator"
+		]
+	},
+	"mixins": [
+		"qtipmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
