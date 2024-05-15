@@ -1,6 +1,5 @@
 package net.qtip.qtipmod.item;
 
-import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.ItemGroups;
@@ -12,12 +11,27 @@ import net.minecraft.util.Identifier;
 
 
 public class ModItems {
-    public static final Item PEANUTS = registerItem("peanuts", new Item(new Item.Settings()));
+    // add any other items exactly like this pretty much
+
+
+    //food items==========
+    public static final Item PEANUTBUTTER = registerItem("peanutbutter", new Item(new Item.Settings().food(ModFoodComponents.PEANUTBUTTER)));
+    public static final Item PEANUTS = registerItem("peanuts", new Item(new Item.Settings().food(ModFoodComponents.PEANUTS)));
+    public static final Item CHEESE = registerItem("cheese", new Item(new Item.Settings().food(ModFoodComponents.CHEESE)));
+    public static final Item GLOWBERRYPIE = registerItem("glowberrypie", new Item(new Item.Settings().food(ModFoodComponents.GLOWBERRYPIE)));
+    public static final Item SWEETBERRYPIE = registerItem("sweetberrypie", new Item(new Item.Settings().food(ModFoodComponents.SWEETBERRYPIE)));
+    public static final Item APPLEPIE = registerItem("applepie", new Item(new Item.Settings().food(ModFoodComponents.APPLEPIE)));
+
+
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
-        //add any other items here like peanuts and such
-        entries.add(PEANUTS);
 
+        entries.add(PEANUTS);
+        entries.add(CHEESE);
+        entries.add(PEANUTBUTTER);
+        entries.add(GLOWBERRYPIE);
+        entries.add(SWEETBERRYPIE);
+        entries.add(APPLEPIE);
     }
 
 
