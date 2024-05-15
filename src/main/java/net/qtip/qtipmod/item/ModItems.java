@@ -12,26 +12,38 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     // add any other items exactly like this pretty much
+    public static final Item MOREL = registerItem("morel", new Item(new Item.Settings()));
 
 
     //food items==========
     public static final Item PEANUTBUTTER = registerItem("peanutbutter", new Item(new Item.Settings().food(ModFoodComponents.PEANUTBUTTER)));
     public static final Item PEANUTS = registerItem("peanuts", new Item(new Item.Settings().food(ModFoodComponents.PEANUTS)));
+    public static final Item ROASTEDPEANUTS = registerItem("roastedpeanuts", new Item(new Item.Settings().food(ModFoodComponents.ROASTEDPEANUTS)));
     public static final Item CHEESE = registerItem("cheese", new Item(new Item.Settings().food(ModFoodComponents.CHEESE)));
+    public static final Item STRAWBERRY = registerItem("strawberry", new Item(new Item.Settings().food(ModFoodComponents.STRAWBERRY)));
+    public static final Item CHEESESTEAK = registerItem("cheesesteak", new Item(new Item.Settings().food(ModFoodComponents.CHEESESTEAK)));
     public static final Item GLOWBERRYPIE = registerItem("glowberrypie", new Item(new Item.Settings().food(ModFoodComponents.GLOWBERRYPIE)));
     public static final Item SWEETBERRYPIE = registerItem("sweetberrypie", new Item(new Item.Settings().food(ModFoodComponents.SWEETBERRYPIE)));
     public static final Item APPLEPIE = registerItem("applepie", new Item(new Item.Settings().food(ModFoodComponents.APPLEPIE)));
-
+    public static final Item STRAWBERRYPIE = registerItem("strawberrypie", new Item(new Item.Settings().food(ModFoodComponents.STRAWBERRYPIE)));
 
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
+        //misc==
+        entries.add(MOREL);
 
+
+        //foods==
         entries.add(PEANUTS);
+        entries.add(ROASTEDPEANUTS);
         entries.add(CHEESE);
+        entries.add(STRAWBERRY);
+        entries.add(CHEESESTEAK);
         entries.add(PEANUTBUTTER);
         entries.add(GLOWBERRYPIE);
         entries.add(SWEETBERRYPIE);
         entries.add(APPLEPIE);
+        entries.add(STRAWBERRYPIE);
     }
 
 

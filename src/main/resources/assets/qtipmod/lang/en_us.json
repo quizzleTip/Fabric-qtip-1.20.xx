@@ -1,8 +1,15 @@
 {
+  //ingredients
+  "item.qtipmod.morel": "Morel",
+  //foods==================
   "item.qtipmod.peanuts": "Peanuts",
+  "item.qtipmod.roastedpeanuts": "Roasted peanuts",
   "item.qtipmod.cheese": "Cheese",
-  "item.qtipmod.peanutbutter": "Peanutbutter",
-  "item.qtipmod.glowberrypie": "Glowberrypie",
-  "item.qtipmod.sweetberrypie": "Sweetberrypie",
-  "item.qtipmod.applepie": "Applepie"
+  "item.qtipmod.strawberry": "Strawberry",
+  "item.qtipmod.cheesesteak": "Cheese steak",
+  "item.qtipmod.peanutbutter": "Peanut butter",
+  "item.qtipmod.glowberrypie": "Glowberry pie",
+  "item.qtipmod.sweetberrypie": "Sweetberry pie",
+  "item.qtipmod.applepie": "Apple pie",
+  "item.qtipmod.strawberrypie": "Strawberry pie"
 }

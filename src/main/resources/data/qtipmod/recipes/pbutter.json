@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "qtipmod:roastedpeanuts"
+    },
+    {
+      "item": "qtipmod:roastedpeanuts"
+    }
+
+  ],
+  "result": {
+    "count": 1,
+    "id": "qtipmod:peanutbutter"
+  }
+}
