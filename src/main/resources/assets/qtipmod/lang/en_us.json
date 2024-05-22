@@ -1,6 +1,10 @@
 {
   //ingredients
   "item.qtipmod.morel": "Morel",
+  "item.qtipmod.sapphire": "Sapphire",
+  "item.qtipmod.ruby": "Ruby",
+  "item.qtipmod.rosequartz": "Rose_quartz",
+
   //foods==================
   "item.qtipmod.peanuts": "Peanuts",
   "item.qtipmod.roastedpeanuts": "Roasted peanuts",
@@ -11,5 +15,8 @@
   "item.qtipmod.glowberrypie": "Glowberry pie",
   "item.qtipmod.sweetberrypie": "Sweetberry pie",
   "item.qtipmod.applepie": "Apple pie",
-  "item.qtipmod.strawberrypie": "Strawberry pie"
+  "item.qtipmod.strawberrypie": "Strawberry pie",
+
+  //blocks=====
+  "block.qtipmod.morel": "morel"
 }

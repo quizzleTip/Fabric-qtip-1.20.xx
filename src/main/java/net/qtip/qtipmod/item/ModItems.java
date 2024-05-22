@@ -13,7 +13,9 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     // add any other items exactly like this pretty much
     public static final Item MOREL = registerItem("morel", new Item(new Item.Settings()));
-
+    public static final Item SAPPHIRE = registerItem("sapphire", new Item(new Item.Settings()));
+    public static final Item RUBY = registerItem("ruby", new Item(new Item.Settings()));
+    public static final Item ROSEQUARTZ = registerItem("rosequartz", new Item(new Item.Settings()));
 
     //food items==========
     public static final Item PEANUTBUTTER = registerItem("peanutbutter", new Item(new Item.Settings().food(ModFoodComponents.PEANUTBUTTER)));
@@ -31,6 +33,9 @@ public class ModItems {
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         //misc==
         entries.add(MOREL);
+        entries.add(SAPPHIRE);
+        entries.add(RUBY);
+        entries.add(ROSEQUARTZ);
 
 
         //foods==

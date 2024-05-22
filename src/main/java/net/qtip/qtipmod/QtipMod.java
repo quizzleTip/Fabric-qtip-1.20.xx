@@ -2,6 +2,7 @@ package net.qtip.qtipmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.qtip.qtipmod.block.ModBlocks;
 import net.qtip.qtipmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,5 +16,6 @@ public class QtipMod implements ModInitializer {
 
 
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
