@@ -22,6 +22,7 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -30,6 +31,7 @@ import net.minecraft.world.EntityView;
 import net.minecraft.world.World;
 import net.qtip.qtipmod.entity.ModEntities;
 import net.qtip.qtipmod.item.ModItems;
+import net.qtip.qtipmod.sound.ModSounds;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Random;
@@ -198,6 +200,9 @@ public class CrowEntity extends TameableShoulderEntity implements Flutterer {
         }
 
         return ActionResult.PASS;
+    }
+    protected SoundEvent getAmbientSound() {
+        return ModSounds.CROW_CAW;
     }
 
 }

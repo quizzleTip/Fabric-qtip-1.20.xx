@@ -1,0 +1,14 @@
+{
+  "owl_hoot": {
+    "subtitle": "sounds.qtipmod.owl_hoot",
+    "sounds": [
+      "qtipmod:owl_hoot"
+    ]
+  },
+  "crow_caw": {
+    "subtitle": "sounds.qtipmod.crow_caw",
+    "sounds": [
+      "qtipmod:crow_caw"
+    ]
+  }
+}

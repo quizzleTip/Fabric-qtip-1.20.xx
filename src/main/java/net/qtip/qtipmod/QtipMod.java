@@ -11,6 +11,7 @@ import net.qtip.qtipmod.entity.custom.CrowEntity;
 import net.qtip.qtipmod.entity.custom.MouseEntity;
 import net.qtip.qtipmod.entity.custom.SnowOwlEntity;
 import net.qtip.qtipmod.item.ModItems;
+import net.qtip.qtipmod.sound.ModSounds;
 import net.qtip.qtipmod.util.ModCustomTrades;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,6 +28,7 @@ public class QtipMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModEntities.registerModEntities();
 		ModCustomTrades.registerCustomTrades();
+		ModSounds.registerSounds();
 
 
 		FabricDefaultAttributeRegistry.register(ModEntities.MOUSE, MouseEntity.createMouseAttributes());

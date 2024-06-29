@@ -14,6 +14,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.ServerWorldAccess;
@@ -21,6 +22,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.biome.BiomeKeys;
 import net.qtip.qtipmod.entity.ModEntities;
 import net.qtip.qtipmod.entity.goal.OwlChaseMouseAndRabbitGoal;
+import net.qtip.qtipmod.sound.ModSounds;
 import org.jetbrains.annotations.Nullable;
 
 
@@ -133,5 +135,8 @@ public class SnowOwlEntity extends AnimalEntity implements Flutterer {
     }
     public static boolean canSpawnInBiome(EntityType<SnowOwlEntity> type, ServerWorldAccess world, SpawnReason spawnReason, BlockPos pos, Random random) {
         return world.getBiome(pos).equals(BiomeKeys.SNOWY_TAIGA);
+    }
+    protected SoundEvent getAmbientSound() {
+        return ModSounds.OWl_HOOT;
     }
 }
