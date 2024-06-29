@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "qtipmod:block/strawberry_bush_stage6"
+  }
+}

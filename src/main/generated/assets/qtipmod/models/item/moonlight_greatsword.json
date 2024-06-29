@@ -1,0 +1,19 @@
+{
+  "parent": "minecraft:item/handheld",
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [ 0, -90, 55 ],
+      "translation": [ 0, 9, 0],
+      "scale": [ 1.5, 1.5, 1 ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [ 0, 90, -55 ],
+      "translation": [ 0, 10.5, 0 ],
+      "scale": [ 1.5, 1.5, 1 ]
+    }
+  },
+
+  "textures": {
+    "layer0": "qtipmod:item/moonlight_greatsword"
+  }
+}
